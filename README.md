@@ -4,6 +4,8 @@
 <p>Hud customizável<p>
 
 <p>Implementação de um carhud na proxima versão<p>
+
+DEPENDÊNCIAS: esx_status
   
   
 <h5>ev_hud utilizado<h5>
