@@ -7,8 +7,8 @@
 
 DEPENDÊNCIAS: esx_status
   
-![alt text](https://discord.com/channels/1017820401801371720/1055597276032155669/1074486699352129546)
-![alt text](https://discord.com/channels/1017820401801371720/1055597276032155669/1074486847914389604)
-![alt text](https://discord.com/channels/1017820401801371720/1055597276032155669/1074487047580029078)
+![My Remote Image](https://media.discordapp.net/attachments/1055597276032155669/1074486699146629270/image.png?width=930&height=671)
+![My Remote Image](https://media.discordapp.net/attachments/1055597276032155669/1074486847469789214/image.png?width=1193&height=671)
+![My Remote Image](https://media.discordapp.net/attachments/1055597276032155669/1074487046976053278/image.png?width=1193&height=671)
   
 <h5>ev_hud utilizado<h5>
