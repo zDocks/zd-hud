@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hud created by Entity Evolution">
+    <title>Hud</title>
+
+    <!--CSS files-->
+    <link rel="stylesheet" href="./css/style.css">
+    <style> #phone, #cinematic {display: none ;}</style>
+  </head>
+  <body >
+    <div id="cinematic">
+      <div class="top" id="top"></div>
+      <div class="bottom" id="bottom"></div>
+    </div>
+
+    <div class="wrapper">
+      <div class="main" id="main" style="margin-right: 1650px;">
+        <svg class="circle" id="health" width="60" height="60">
+          <circle class="progressplayer health" id="health-circle" stroke="#9DE112" stroke-width="2.0" style="stroke-opacity: 1.0" fill="rgba(0, 0, 0, 0.55)" r="20" cx="24" cy="24" stroke-dasharray="70 30" stroke-dashoffset="0"/>
+          <image href="./img/logos/health.png" height="17" width="17" x="26%" y="47.5%"></image>
+        </svg>
+
+        <svg class="circle" id="armor" width="60" height="60" style="margin-left: -15px;">
+          <circle class="progressplayer armor" id="armor-circle" stroke="#3585DA" stroke-width="2.0" style="stroke-opacity: 1.0" fill="rgba(0, 0, 0, 0.55)" r="20" cx="24" cy="24" stroke-dasharray="70 30" stroke-dashoffset="0"/>
+          <image href="./img/logos/armor.png" height="17" width="17" x="26%" y="46.5%"></image>
+        </svg>
+          <svg class="circle" id="hunger" width="60" height="60" style="margin-left: -15px;">
+          <circle class="progressplayer hunger" id="hunger-circle" stroke="#ffa200" stroke-width="2.0" style="stroke-opacity: 1.0" fill="rgba(0, 0, 0, 0.55)" r="20" cx="24" cy="24" stroke-dasharray="70 30" stroke-dashoffset="0"/>
+          <image href="./img/logos/hunger.png" height="17" width="17" x="25.5%" y="46.5%"></image>
+        </svg>
+
+        <svg class="circle" id="thirst" width="60" height="60" style="margin-left: -15px;">
+          <circle class="progressplayer thirst" id="thirst-circle" stroke="#00b6e3" stroke-width="2.0" style="stroke-opacity: 1.0" fill="rgba(0, 0, 0, 0.55)" r="20" cx="24" cy="24" stroke-dasharray="70 30" stroke-dashoffset="0"/>
+          <image href="./img/logos/thirst.png" height="17" width="17" x="25.5%" y="46.5%"></image>
+        </svg>
+    
+      </div>
+    </div>
+
+    <!--Phone menu-->
+    <div id="phone" class="panel-menu-wrapper">
+      <div class="image-container">
+        <div class="alert">
+          <span class="alert-text">Guardado</span>
+      </div>
+        <span class="image-title">Definições HUD</span>
+        <div class="image-wrapper">
+          <div class="button-container">
+            <label class="switch-top">
+              <input id="check-health" type="checkbox" checked>
+              <span class="slider"></span>
+              <img class="slider-image" id="slider-health" src="./img/logos/health.png" alt="health"></img>
+              <p class="switch-title">Vida</p>
+            </label>
+            <label class="switch-top">
+              <input id="check-armor" type="checkbox" checked>
+              <span class="slider"></span>
+              <img class="slider-image"id="slider-armor" src="./img/logos/armor.png" alt="armor"></img>
+              <p class="switch-title">Colete</p>
+            </label>
+            <label id="slider-hunger"class="switch">
+              <input id="check-hunger" type="checkbox" checked>
+              <span class="slider"></span>
+              <img class="slider-image" src="./img/logos/hunger.png" alt="hunger"></img>
+              <p class="switch-title">Fome</p>
+            </label>
+            <label id="slider-thirst" class="switch">
+              <input id="check-thirst" type="checkbox" checked>
+              <span class="slider"></span>
+              <img class="slider-image" src="./img/logos/thirst.png" alt="thirst"></img>
+              <p class="switch-title">Sede</p>
+            </label>
+            <label class="switch">
+              <input id="check-cinematic" type="checkbox">
+              <span class="slider"></span>
+              <img class="slider-image" id="slider-cinematic" src="./img/logos/cinematic.png" alt="movie"></img>
+              <p class="switch-title">Cinema</p>
+            </label>
+            <select class="selection" id="selection">
+              <option class="options" value="health-option">HUD</option>
+            </select>
+            <input id="colorpicker" class="colorpicker" type="color" value="#545454">
+
+            <button class="accept-button">&#10004; Guardar</button>
+            <audio id="audio" src="./img/noti.wav"></audio>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Javascript files-->
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script
+    src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+    integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../config/config.js"></script>
+    <script type="text/javascript" src="./js/sliders.js"></script>
+    <script type="text/javascript" src="./js/nui.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+  </body>
+</html>
